@@ -279,18 +279,7 @@ Epoch 5: loss=0.0266  val_acc=100.0%  val_f1=1.00  val_auc=1.00
 
 ---
 
-## 👤 Author
 
-**Pari Kodumuru**  
-*ML Engineer | Medical Imaging | HPC Computing*
-
----
-
-## 📄 License
-
-This project is for educational and research purposes.
-
----
 
 <p align="center">
   <i>Built with 🔬 for advancing medical AI on HPC infrastructure</i>

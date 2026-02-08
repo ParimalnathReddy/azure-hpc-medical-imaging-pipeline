@@ -1,18 +1,33 @@
-# Large / generated artifacts (do not commit)
+# data
+data/
 datasets/
-work/
+*.zip
+*.tar.gz
 
-# Logs
-*.out
-*.err
+# outputs
+runs/
+artifacts/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+
+# logs
 *.log
+wandb/
+mlruns/
 
-# Python / notebooks
+# notebooks
+.ipynb_checkpoints/
+
+# python
 __pycache__/
 *.pyc
 .venv/
 .env
-.ipynb_checkpoints/
 
-# OS
-.DS_Store
+
+
+work/
