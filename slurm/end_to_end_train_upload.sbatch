@@ -10,7 +10,7 @@
 set -euo pipefail
 
 PROJ="/mnt/scratch/kodumuru/pari/chestxray_project"
-REPO="$PROJ/azure-hpc-medical-imaging"
+REPO="$PROJ"
 WORK="$PROJ/work"
 DATA_DIR="$WORK/data/chestxray/raw"
 RUNS_DIR="$WORK/runs"
