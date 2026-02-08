@@ -1,4 +1,4 @@
-# 🩺 Chest X-Ray Pneumonia Detection with Azure HPC
+# Chest X-Ray Pneumonia Detection with Azure HPC
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
@@ -9,7 +9,7 @@ An end-to-end **deep learning pipeline** for automated pneumonia detection from 
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Key Features](#-key-features)
@@ -25,7 +25,7 @@ An end-to-end **deep learning pipeline** for automated pneumonia detection from 
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements a **binary classification model** to detect pneumonia from chest X-ray images using transfer learning with ResNet-50. The pipeline is designed for **scalable HPC environments** with seamless Azure Blob Storage integration for data management and artifact versioning.
 
@@ -40,7 +40,7 @@ Pneumonia is a leading cause of death worldwide. Early and accurate diagnosis th
 
 ---
 
-## ✨ Key Features
+##   Key Features
 
 | Feature | Description |
 |---------|-------------|
@@ -53,7 +53,7 @@ Pneumonia is a leading cause of death worldwide. Early and accurate diagnosis th
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -103,7 +103,7 @@ flowchart LR
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 azure-hpc-medical-imaging/
@@ -133,7 +133,7 @@ work/runs/YYYYMMDD_HHMMSS_resnet50/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -169,7 +169,7 @@ tail -f ../work/logs/cxr_e2e_r50_<JOB_ID>.out
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 Edit `configs/train_resnet50.yaml` to customize training:
 
@@ -192,7 +192,7 @@ paths:
 
 ---
 
-## 🔬 Training Pipeline
+## Training Pipeline
 
 ### 1. Data Loading
 - Images loaded via `torchvision.datasets.ImageFolder`
@@ -225,7 +225,7 @@ ResNet-50 (ImageNet pretrained)
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 
 ### Latest Training Run Results
 
@@ -246,7 +246,7 @@ Epoch 5: loss=0.0266  val_acc=100.0%  val_f1=1.00  val_auc=1.00
 
 ---
 
-## ☁️ Cloud Integration
+##  Cloud Integration
 
 ### Data Flow
 
@@ -261,14 +261,14 @@ Epoch 5: loss=0.0266  val_acc=100.0%  val_f1=1.00  val_auc=1.00
    ```
 
 ### Benefits
-- 📦 **Centralized datasets** across HPC nodes
-- 🔄 **Versioned artifacts** with timestamp-based directories
-- 🔐 **Secure access** via SAS tokens (no credentials in code)
-- 🌐 **Accessible results** from anywhere via Azure portal
+-  **Centralized datasets** across HPC nodes
+-  **Versioned artifacts** with timestamp-based directories
+-  **Secure access** via SAS tokens (no credentials in code)
+-  **Accessible results** from anywhere via Azure portal
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] **Multi-class Classification**: Extend to detect specific pneumonia types (bacterial vs viral)
 - [ ] **Model Registry**: Integration with MLflow or Azure ML for model versioning
