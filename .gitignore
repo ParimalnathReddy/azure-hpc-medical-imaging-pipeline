@@ -1,0 +1,18 @@
+# Large / generated artifacts (do not commit)
+datasets/
+work/
+
+# Logs
+*.out
+*.err
+*.log
+
+# Python / notebooks
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

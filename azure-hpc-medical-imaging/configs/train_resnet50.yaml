@@ -1,0 +1,12 @@
+seed: 42
+epochs: 5
+batch_size: 32
+lr: 0.0003
+num_workers: 4
+img_size: 224
+model: resnet50
+num_classes: 2
+
+paths:
+  local_data_root: /mnt/scratch/kodumuru/pari/chestxray_project/work/data/chestxray/raw
+  run_root: /mnt/scratch/kodumuru/pari/chestxray_project/work/runs
